@@ -36,7 +36,7 @@ public class UserInterface {
                     if (userChoice >= 1 && userChoice <= 12) {
                         for (Months month : Months.values()) {
                             if (month.getMonthValue() == userChoice) {
-                                System.out.println("The month is: " + month);
+                                System.out.println("The month is: " + month.getDisplayMonth() + " and it is the number " + userChoice + " month. This month's season is: " + month.getDisplaySeason());
                                 return;
                             }
                         }
